@@ -1,0 +1,227 @@
+.channel .container {
+    padding: 62px 0 0 180px;
+}
+
+.channel__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+
+    .channel__item {
+        list-style: none;
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+
+        .channel__profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .channel__useri {
+                border-radius: 50%;
+                width: 80px;
+                height: 80px;
+            }
+
+            .channel__usert--t {
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+
+    .channel__sub {
+        border: none;
+        background-color: red;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}
+
+.channel__center {
+    display: flex;
+    gap: 20px;
+    .channel__center--list {
+        display: flex;
+        list-style: none;
+        gap: 33px;
+        padding: 0;
+
+        .channel__c--item:hover {
+            color: red;
+            text-decoration: underline;
+            text-underline-offset: 5px;
+            cursor: pointer;
+        }
+    }
+
+    .channel__centerC {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .channel__right {
+        width: 550px;
+    }
+
+    .chanel__rightU {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+    }
+}
+
+.channel__mobileL {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+    padding: 0;
+    font-size: 14px;
+    display: none;
+
+    .channel__c--item:hover {
+        color: red;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .channel__videoImg {
+        width: 370px;
+        height: 180px;
+    }
+
+    .channel__Ct {
+        font-size: 16px;
+    }
+
+    .channel__Cp {
+        font-size: 13px;
+    }
+
+    .channel__right--img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 1046px) {
+    .channel__list {
+        .channel__item {
+            .channel__profile {
+                .channel__useri {
+                    width: 57px;
+                    height: 57px;
+                }
+            }
+        }
+    }
+
+    .channel__center {
+        .channel__center--list {
+            gap: 20px;
+
+            .channel__c--item {
+                font-size: 14px;
+            }
+        }
+
+        .channel__right {
+            width: 340px;
+        }
+    }
+
+    .channel__videoImg {
+        width: 270px;
+        height: 145px;
+    }
+
+    .channel__usert--t {
+        font-size: 17px;
+    }
+
+    .channel__Ct {
+        font-size: 15px;
+    }
+
+    .channel__Cp {
+        font-size: 11px;
+    }
+
+    .channel__right--img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .channel__rightH {
+        font-size: 14px;
+    }
+
+    .channel__endTitle {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1046px) {
+    .channel__list {
+        flex-direction: column;
+        height: 111px;
+        .channel__item {
+            transform: translateY(-50px);
+            margin-left: 20px;
+
+            .channel__itemI {
+                display: none;
+            }
+            .channel__profile {
+                flex-direction: column;
+                align-items: start;
+            }
+        }
+    }
+
+    .channel__center {
+        .channel__center--list {
+            display: none;
+        }
+
+        .channel__mobileL {
+            display: flex;
+        }
+
+        .channel__centerC {
+            display: none;
+        }
+    }
+
+
+    .channel__right {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1046px){
+    .channel__endTitle {
+        display: none;
+    }
+
+    .head__list {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1046px) {
+    .channel .container {
+        padding: 50px 0 0 0;
+    }
+    .channel__center--top {
+        margin: 0 auto;
+    }
+}
